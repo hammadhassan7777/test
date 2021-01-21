@@ -1,0 +1,16 @@
+<br />
+<div class="card" style="width: '100%'">
+    <div class="card-body">
+        <h5 class="card-title">Card {{title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{child}}</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        <input type="text" class="form-control" #myService>
+        <br />
+        <button class="btn btn-danger" (click)="changeData(myService)">service</button>
+        <br/>
+        <br/>
+        <app-service1 [myData]="data" (myOutput)="getData($event)"></app-service1>
+
+    </div>
+</div>
